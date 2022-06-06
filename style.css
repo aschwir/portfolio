@@ -5,7 +5,7 @@ body {
     padding: 0;
 }
 
-@keyframes example {
+/* @keyframes example {
     0% {
         background-color: #00020a;
 
@@ -23,7 +23,7 @@ body {
         background-color: #3409ab;
 
     }
-}
+} */
 
 .main_container {
     display: flex;
@@ -101,10 +101,43 @@ a {
 div>img {
     height: 80%;
     width: 80%;
-    /* object-fit: contain; */
-    opacity: .2;
+    opacity: .5;
     border-radius: 80%;
+    box-shadow: 5px 5px 3px 3px #080808,
+        7px 7px 3px 3px #121212,
+        9px 9px 6px 6px #1f1f1f,
+        11px 11px 3px 3px #2e2e2e;
 }
+
+.item1 {
+    animation: float 4s 1s infinite alternate;
+}
+
+.item2 {
+    animation: float 4s 2s infinite alternate;
+}
+
+.item3 {
+    animation: float 4s 3s infinite alternate;
+}
+
+
+@keyframes float {
+    from {
+        box-shadow: 2px 2px 2px 2px #080808,
+            2px 2px 2px 2px #121212,
+            2px 2px 2px 2px #1f1f1f,
+            2px 2px 2px 2px #2e2e2e;
+    }
+
+    to {
+        box-shadow: 5px 5px 3px 3px #080808,
+            7px 7px 3px 3px #121212,
+            9px 9px 6px 6px #1f1f1f,
+            11px 11px 3px 3px #2e2e2e;
+    }
+}
+
 
 
 .footer {
