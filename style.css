@@ -1,29 +1,18 @@
 body {
-    background-color: white;
+    background-color: #2777cc;
     animation: example 10s 3s infinite alternate;
     margin: 0;
     padding: 0;
 }
 
-@keyframes example {
-    0% {
-        background-color: #5875c7;
 
-    }
+.navbar {
+    border-bottom: 3px solid #6b9ebf;
+    height: 10vh;
 
-    25% {
-        background-color: #5866c7;
-    }
-
-    50% {
-        background-color: #5b58c7;
-    }
-
-    100% {
-        background-color: #7258c7;
-
-    }
 }
+
+
 
 .main_container {
     display: flex;
@@ -123,12 +112,7 @@ div>img {
 
 
 @keyframes float {
-    from {
-        /* box-shadow: 0px 0px 0px 0px #080808,
-            0px 0px 0px 0px #121212,
-            0px 0px 0px 0px #1f1f1f,
-            0px 0px 0px 0px #2e2e2e; */
-    }
+    from {}
 
     to {
         box-shadow: 5px 5px 3px 3px #080808,
@@ -141,8 +125,32 @@ div>img {
 
 
 .footer {
-
-    height: 40vh;
-    font-size: 3em;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 10vh;
+    font-size: 1em;
     text-align: center;
+}
+
+
+footer>div {
+    margin: auto 50px;
+}
+
+.icon {
+    width: 2vw;
+    height: 3vh;
+    opacity: 1;
+}
+
+.main {
+    animation: drawBorder 4s;
+}
+
+@keyframes drawBorder {
+    from {}
+
+    to {}
 }
