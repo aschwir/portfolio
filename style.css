@@ -8,7 +8,10 @@ body {
 
 .navbar {
     border-bottom: 3px solid #6b9ebf;
-    height: 10vh;
+    height: 15vh;
+    width: auto;
+
+
 
 }
 
@@ -35,7 +38,7 @@ ul {
 a {
     color: white;
     list-style: none;
-    padding: 1em 2em;
+    padding: 0 1em 0em 1em;
     text-decoration: none;
     font-size: 1.2em;
     text-shadow: 1px 1px 1px #919191,
@@ -46,7 +49,7 @@ a {
 
 @media only screen and (max-width: 600px) {
     a {
-        font-size: .9em;
+        font-size: .7em;
     }
 
     div>img {
@@ -61,13 +64,41 @@ a {
 }
 
 .main {
-
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
     font-size: 4em;
+    background-color: black;
 
 }
 
+.main-box-left {
+    height: 50vh;
+    width: 50vw;
+    border: 10px solid white;
+    margin: 10px
+}
 
+.main-box-right {
+    height: 50vh;
+    width: 50vw;
+    border: 10px solid white;
+    margin: 10px
+}
 
+.main-box {
+    width: 50%;
+    height: 50%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    box-shadow: 0px 0px 5px 5px #080808;
+}
+
+.picture {
+    border-radius: 10%;
+}
 
 .grid {
 
@@ -103,18 +134,21 @@ div>img {
 }
 
 .item2 {
-    animation: float 5s 3s infinite alternate;
+    animation: float 5s 2s infinite alternate;
     margin-left: 50px;
     margin-right: 50px;
 }
 
 .item3 {
-    animation: float 5s 2s infinite alternate;
+    animation: float 5s 4s infinite alternate;
 }
 
 
 @keyframes float {
-    from {}
+    from {
+        /* box-shadow: 0px 0px 25px 15px #080808, */
+
+    }
 
     to {
         box-shadow: 5px 5px 3px 3px #080808,
