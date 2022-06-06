@@ -5,25 +5,25 @@ body {
     padding: 0;
 }
 
-/* @keyframes example {
+@keyframes example {
     0% {
-        background-color: #00020a;
+        background-color: #5875c7;
 
     }
 
     25% {
-        background-color: #011557;
+        background-color: #5866c7;
     }
 
     50% {
-        background-color: #2c0257;
+        background-color: #5b58c7;
     }
 
     100% {
-        background-color: #3409ab;
+        background-color: #7258c7;
 
     }
-} */
+}
 
 .main_container {
     display: flex;
