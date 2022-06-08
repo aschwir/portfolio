@@ -1,20 +1,20 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
 body {
+    height: 100%;
+    width: 100%;
     background-color: #2777cc;
     animation: example 10s 3s infinite alternate;
     margin: 0;
     padding: 0;
 }
-
-
-.navbar {
-    border-bottom: 3px solid #6b9ebf;
-    width: 100%;
-
-
-
-}
-
-
 
 .main_container {
     display: flex;
@@ -24,6 +24,13 @@ body {
 
 }
 
+.navbar {
+    border-bottom: 3px solid #6b9ebf;
+    width: 100%;
+
+}
+
+
 ul {
     display: flex;
     flex-direction: row;
@@ -31,8 +38,8 @@ ul {
     padding: 0;
     font-size: 1.2em;
     font-family: 'Oswald', sans-serif;
-
 }
+
 
 a {
     color: white;
@@ -62,6 +69,8 @@ a {
     margin-left: auto;
 }
 
+
+
 .main {
     display: flex;
     flex-direction: row;
@@ -69,36 +78,14 @@ a {
     align-items: center;
     width: 100%;
     font-size: 4em;
+    margin-bottom: 5%;
 
 
 }
 
-.main-box-left {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 15vw;
 
-    margin: 0
-}
-
-.main-box-right {
-
-    width: 50vw;
-    margin: 10px
-}
-
-.main-box {
-    width: 50%;
-    margin: 10px auto;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    box-shadow: 0px 0px 5px 5px #080808;
-}
-
-.picture {
-    border-radius: 10%;
+.toledo {
+    width: 90%;
 }
 
 .grid {
@@ -114,17 +101,13 @@ a {
     display: grid;
     place-items: center;
 
-
-
-
-
 }
 
-div>img {
+
+.project_pic {
     width: 20vw;
     border-radius: 80%;
     margin: 0px 20px;
-
 }
 
 .item1 {
@@ -133,8 +116,7 @@ div>img {
 
 .item2 {
     animation: float 5s 2s infinite alternate;
-    margin-left: 50px;
-    margin-right: 50px;
+
 }
 
 .item3 {
@@ -161,22 +143,20 @@ div>img {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    align-items: flex-end;
     width: 100%;
 }
 
 .favicon {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 3%;
+
     width: 10%;
 }
 
 .icon {
-    width: 30%;
+    width: 20%;
     margin: 0;
-}
-
-.toledo {
-    width: 90%;
-}
-
-.project_pic {
-    width: 80%;
+    margin-left: auto;
 }
