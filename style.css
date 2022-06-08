@@ -58,10 +58,6 @@ a {
         font-size: .7em;
     }
 
-    div>img {
-
-        width: 15vw;
-    }
 }
 
 
@@ -73,19 +69,40 @@ a {
 
 .main {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    font-size: 4em;
-    margin-bottom: 5%;
-
+    width: 100vw;
+    font-size: .5em;
+    margin-top: 10%;
 
 }
 
 
 .toledo {
     width: 90%;
+}
+
+.project-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+
+
+}
+
+h3 {
+    border-width: 25%;
+    border-style: solid;
+    padding: 2%
+}
+
+hr {
+    border: none;
+    width: 25%;
+    height: .3vw;
+    background-color: #080808;
 }
 
 .grid {
@@ -95,6 +112,7 @@ a {
     align-items: center;
     justify-content: center;
     width: 100%;
+    margin-top: 2%;
 }
 
 .grid-items {
