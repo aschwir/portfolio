@@ -2,13 +2,13 @@
     box-sizing: border-box;
 }
 
-html {
+/* html {
+    height: fill-available;
     height: -webkit-fill-available;
-
-}
+} */
 
 body {
-    height: -webkit-fill-available;
+
     width: 100%;
     background-color: #2777cc;
     animation: example 10s 3s infinite alternate;
@@ -30,6 +30,7 @@ body {
     justify-content: center;
     border-bottom: 3px solid #6b9ebf;
     width: 100%;
+
 
 }
 
@@ -77,13 +78,14 @@ a {
     align-items: center;
     width: 100%;
     font-size: .5em;
-    margin-top: 10%;
+    margin-top: 10vh;
 
 }
 
 
 .toledo {
     width: 90%;
+    padding-bottom: 5vh;
 }
 
 .project-header {
@@ -133,6 +135,7 @@ hr {
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr 1fr;
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -147,9 +150,8 @@ hr {
 
 
 .project_pic {
-    width: 20%;
+    width: 100%;
     border-radius: 80%;
-    /* margin: 0px 20px; */
 }
 
 .item1 {
@@ -163,8 +165,20 @@ hr {
 
 .item3 {
     animation: float 5s 4s infinite alternate;
+
 }
 
+.grid2 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.grid3 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
 
 @keyframes float {
     from {
@@ -187,7 +201,7 @@ hr {
     justify-content: flex-end;
     align-items: flex-end;
     width: 95%;
-    margin-top: 15%;
+    margin-top: 20%;
 }
 
 .favicon {
