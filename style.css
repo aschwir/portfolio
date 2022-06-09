@@ -2,14 +2,15 @@
     box-sizing: border-box;
 }
 
-html {
+/* html {
     height: 100vh;
     width: 100vw;
-}
+} */
 
 body {
-    height: 100vh;
-    width: 100vw;
+    /* height: 100vh; */
+    min-height: 100vh;
+    width: 100%;
     background-color: #2777cc;
     animation: example 10s 3s infinite alternate;
     margin: 0;
