@@ -2,11 +2,6 @@
     box-sizing: border-box;
 }
 
-/* html {
-    height: fill-available;
-    height: -webkit-fill-available;
-} */
-
 body {
 
     width: 100%;
@@ -20,8 +15,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100vw;
-    min-height: 100%;
+    width: 100%;
+    /* min-height: 100%; */
 
 }
 
@@ -29,7 +24,9 @@ body {
     display: flex;
     justify-content: center;
     border-bottom: 3px solid #6b9ebf;
-    width: 100%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 
 
 }
@@ -133,6 +130,8 @@ hr {
 
 .hr-bottom {
     width: 50%;
+    margin-top: 5%;
+
 }
 
 .grid {
@@ -143,7 +142,7 @@ hr {
     align-items: center;
     justify-content: center;
     width: 100%;
-    margin-top: 10%;
+    margin-top: 5%;
 }
 
 .grid-items {
@@ -154,7 +153,7 @@ hr {
 
 
 .project_pic {
-    width: 80%;
+    width: 60%;
     border-radius: 80%;
 }
 
@@ -211,7 +210,8 @@ hr {
     justify-content: flex-end;
     align-items: flex-end;
     width: 95%;
-    margin-top: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 .favicon {
