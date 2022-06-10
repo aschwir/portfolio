@@ -135,7 +135,7 @@ hr {
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -194,6 +194,12 @@ hr {
     }
 }
 
+.bottom-project-area {
+    display: flex;
+    justify-content: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
 
 .footer {
     display: flex;
@@ -201,7 +207,7 @@ hr {
     justify-content: flex-end;
     align-items: flex-end;
     width: 95%;
-    margin-top: 20%;
+    margin-top: 10%;
 }
 
 .favicon {
