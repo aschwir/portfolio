@@ -78,13 +78,13 @@ a {
     align-items: center;
     width: 100%;
     font-size: .5em;
-    margin-top: 10vh;
+    margin-top: 5vh;
 
 }
 
 
 .toledo {
-    width: 90%;
+    width: 80%;
     padding-bottom: 5vh;
 }
 
@@ -150,7 +150,7 @@ hr {
 
 
 .project_pic {
-    width: 100%;
+    width: 80%;
     border-radius: 80%;
 }
 
