@@ -211,7 +211,7 @@ hr {
     align-items: flex-end;
     width: 95%;
     margin-top: 5%;
-    margin-bottom: 5%;
+    /* margin-bottom: 5%; */
 }
 
 .favicon {
