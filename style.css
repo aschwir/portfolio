@@ -98,6 +98,7 @@ a {
 .toledo {
     width: 90%;
     padding-bottom: 5vh;
+    margin-top: 15%;
 }
 
 .project-header {
@@ -157,7 +158,7 @@ hr {
     align-items: center;
     justify-content: center;
     width: 100%;
-    margin-top: 15%;
+    margin-top: 10%;
 }
 
 .grid-items {
@@ -166,6 +167,9 @@ hr {
 
 }
 
+.project-name {
+    margin-bottom: 5%;
+}
 
 .project_pic {
     width: 60%;
@@ -217,6 +221,11 @@ hr {
     justify-content: center;
     padding-left: 50px;
     padding-right: 50px;
+    /* margin-top: 20%; */
+}
+
+.hr-bottom {
+    margin-top: 15%;
 }
 
 .footer {
@@ -228,7 +237,7 @@ hr {
     align-items: flex-end;
     width: 95%;
     margin-top: 5%;
-    /* margin-bottom: 5%; */
+
 }
 
 .favicon {
