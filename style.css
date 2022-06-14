@@ -113,14 +113,84 @@ a {
 }
 
 .project-head {
+    /* position: absolute; */
     display: flex;
     justify-content: center;
-    width: 50%;
+    height: 10vh;
+    width: 50vw;
     border-left: solid;
     border-right: solid;
     border-top: solid;
     border-bottom: solid;
     margin: 0;
+}
+
+.project-title {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    height: 10vh;
+    width: 100vw;
+
+
+}
+
+.inside1 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+
+.inside1::before {
+    content: "";
+    background: black;
+    display: block;
+    width: 5px;
+    height: 0%;
+    position: absolute;
+    top: 50;
+    left: 0;
+    animation: grow 2s 1s 1 normal;
+    animation-fill-mode: both;
+}
+
+
+
+
+
+.inside1::after {
+    content: "";
+    background: black;
+    display: block;
+    width: 10px;
+    height: 5%;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    animation: grow2 2s 1s 1 normal;
+    animation-fill-mode: forwards;
+
+}
+
+
+
+.inside2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.inside3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
 }
 
 .project-line {
