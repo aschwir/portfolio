@@ -113,9 +113,7 @@ a {
 }
 
 .project-head {
-    /* position: absolute; */
-    display: flex;
-    justify-content: center;
+    position: relative;
     height: 10vh;
     width: 50vw;
     border-left: solid;
@@ -137,60 +135,167 @@ a {
 
 }
 
+.project-banner {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+}
+
+.banner {
+    margin: 0;
+}
+
 .inside1 {
     position: absolute;
-    height: 100%;
     width: 100%;
+    height: 100%;
+
 }
 
 
 .inside1::before {
     content: "";
-    background: black;
+    background: transparent;
     display: block;
-    width: 5px;
-    height: 0%;
+    width: 2px;
+    height: 5%;
     position: absolute;
-    top: 50;
+    bottom: 50%;
     left: 0;
-    animation: grow 2s 1s 1 normal;
+    animation: grow 1s 3s 1 normal;
     animation-fill-mode: both;
 }
 
-
-
-
-
 .inside1::after {
     content: "";
-    background: black;
+    background: transparent;
     display: block;
-    width: 10px;
+    width: 2px;
     height: 5%;
     position: absolute;
     top: 50%;
     right: 0;
-    animation: grow2 2s 1s 1 normal;
+    animation: grow2 1s 3s 1 normal;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes grow {
+    from {
+        background: black;
+        height: 0%;
+
+    }
+
+    to {
+        background: black;
+        height: 50%;
+
+    }
+}
+
+
+@keyframes grow2 {
+    from {
+        background: black;
+        height: 0%;
+
+    }
+
+    to {
+        background: black;
+        height: 50%;
+
+    }
+}
+
+.inside2 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+
+}
+
+.inside2::before {
+    content: "";
+    background: transparent;
+    display: block;
+    width: 2px;
+    height: 5%;
+    position: absolute;
+    top: 0%;
+    left: 0;
+    animation: grow3 1s 4s 1 normal;
+    animation-fill-mode: both;
+}
+
+@keyframes grow3 {
+    from {
+        background: black;
+        width: 0%;
+
+    }
+
+    to {
+        background: black;
+        width: 100%;
+
+    }
+}
+
+.inside2::after {
+    content: "";
+    background: black;
+    display: block;
+    width: 2px;
+    height: 5%;
+    position: absolute;
+    bottom: 0%;
+    right: 0;
+    animation: grow3 1s 4s 1 normal;
+    animation-fill-mode: both;
+}
+
+
+.inside3 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.inside3::before {
+    content: "";
+    background: transparent;
+    display: block;
+    width: 2px;
+    height: 5%;
+    position: absolute;
+    top: 0%;
+    right: 0;
+    animation: grow2 1s 5s 1 normal;
     animation-fill-mode: forwards;
 
 }
 
 
 
-.inside2 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-}
 
-.inside3 {
+.inside3::after {
+    content: "";
+    background: transparent;
+    display: block;
+    width: 2px;
+    height: 5%;
     position: absolute;
-    top: 0;
+    bottom: 0%;
     left: 0;
-    height: 100%;
-    width: 100%;
+    animation: grow 1s 5s 1 normal;
+    animation-fill-mode: forwards;
+
 }
 
 .project-line {
@@ -211,21 +316,22 @@ h3 {
 }
 
 hr {
-    border: none;
+    border: solid;
     width: 100%;
-    height: .3vw;
-    background-color: #080808;
+    height: 5%;
+    background-color: black;
 
 }
 
 .left-line {
-    animation: line-fade-right 5s 2s infinite normal;
+    animation: line-fade-right 2s 1s 1 normal;
     position: relative;
     top: 50%;
+    background: black;
 }
 
 .right-line {
-    animation: line-fade-left 5s 2s infinite normal;
+    animation: line-fade-left 2s 1s 1 normal;
     position: relative;
     top: 50%;
 }
@@ -246,7 +352,7 @@ hr {
     to {
 
         width: 100%;
-        margin-right: 0;
+        margin-right: 0%;
     }
 }
 
