@@ -19,13 +19,11 @@ body {
 
 
 .main_container {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100%;
-    /* height: 100%; */
-    /* min-height: 100%; */
-
+    width: 100vw;
 }
 
 .navbar {
@@ -98,7 +96,7 @@ a {
 .toledo {
     width: 90%;
     padding-bottom: 5vh;
-    margin-top: 15%;
+    margin-top: 10%;
 }
 
 .project-header {
@@ -374,29 +372,6 @@ h3 {
 
 }
 
-/* hr {
-    border: solid;
-    width: 100%;
-    height: 5%;
-} */
-
-/* .left-line {
-    animation: line-fade-right 2s 1s 1 normal;
-    animation-fill-mode: both;
-    position: relative;
-    top: 50%;
-
-
-}
-
-.right-line {
-    animation: line-fade-left 2s 1s 1 normal;
-    animation-fill-mode: both;
-    position: relative;
-    top: 50%;
-
-} */
-
 .project-head {
     animation: line-fade-top 5s 0s infinite normal;
 }
@@ -433,7 +408,7 @@ h3 {
     }
 }
 
-*/ .hr-bottom {
+.hr-bottom {
     width: 50%;
     margin-top: 5%;
 
@@ -447,7 +422,8 @@ h3 {
     align-items: center;
     justify-content: center;
     width: 100%;
-    margin-top: 10%;
+    margin-top: 2%;
+
 }
 
 .grid-items {
@@ -506,15 +482,64 @@ h3 {
 }
 
 .bottom-project-area {
-    display: flex;
-    justify-content: center;
-    padding-left: 50px;
-    padding-right: 50px;
-    margin-top: 20%;
+    position: relative;
+    margin-top: 5vh;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 4vh;
+
 }
 
-.hr-bottom {
-    margin-top: 6%;
+.bottom-line {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.bottom-line::before {
+    content: "";
+    background: transparent;
+    display: block;
+    width: 100%;
+    height: 6%;
+    position: absolute;
+    bottom: 50%;
+    left: 0%;
+    margin-right: 10%;
+    margin-left: auto;
+    animation: bottom_grow 5s 1s 1 normal;
+    animation-fill-mode: forwards;
+}
+
+.bottom-line::after {
+    content: "";
+    background: transparent;
+    display: block;
+    width: 100%;
+    height: 6%;
+    position: absolute;
+    bottom: 50%;
+    right: 0%;
+    margin-left: 10%;
+    margin-right: auto;
+    animation: bottom_grow 5s 1s 1 normal;
+    animation-fill-mode: forwards;
+}
+
+@keyframes bottom_grow {
+    from {
+        background: black;
+        height: 0px;
+        width: 0px;
+    }
+
+    to {
+        background: black;
+        height: 6%;
+        width: 100%
+    }
 }
 
 .footer {
@@ -525,7 +550,7 @@ h3 {
     justify-content: flex-end;
     align-items: flex-end;
     width: 95%;
-    margin-top: 5%;
+    margin-top: 10%;
 
 }
 
@@ -533,7 +558,6 @@ h3 {
     display: flex;
     justify-content: flex-end;
     margin-right: 3%;
-
     width: 10%;
 }
 
