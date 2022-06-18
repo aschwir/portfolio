@@ -123,8 +123,7 @@ a {
     bottom: 50%;
     left: 0;
     width: 10px;
-    height: .4vw;
-    background: blue;
+    height: 2%;
     animation: grow3 1s 4s 1 normal;
     animation-fill-mode: both;
 }
@@ -136,7 +135,7 @@ a {
     bottom: 50%;
     right: 0;
     width: 10px;
-    height: .4vw;
+    height: 2%;
     background: blue;
     animation: grow3 1s 4s 1 normal;
     animation-fill-mode: both;
@@ -168,19 +167,16 @@ a {
 .project-head {
     position: relative;
     height: 10vh;
-    /* width: 3vw; */
     margin: 0;
 }
 
 
 .right-line {
     height: 10vh;
-    /* width: 3vw; */
 }
 
 .left-line {
     height: 10vh;
-    /* width: 10vw; */
 }
 
 .project-title {
@@ -229,7 +225,7 @@ a {
     background: transparent;
     display: block;
     width: 2px;
-    height: .4vw;
+    height: 2%;
     position: absolute;
     bottom: 50%;
     left: 0;
@@ -242,7 +238,7 @@ a {
     background: transparent;
     display: block;
     width: 2px;
-    height: .4vw;
+    height: 2%;
     position: absolute;
     top: 50%;
     right: 0;
