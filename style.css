@@ -171,6 +171,10 @@ a {
 
 .banner-text {
     font-size: 3vw;
+    color: white;
+    text-shadow: 1px 1px 1px #919191,
+        1px 2px 1px #919191,
+        1px 3px 1px #919191;
 }
 
 .right-banner-line {
