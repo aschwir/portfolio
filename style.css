@@ -26,6 +26,7 @@ body {
     width: 100vw;
 }
 
+/* navigation styles */
 .navbar {
     position: fixed;
     top: 0;
@@ -81,7 +82,7 @@ a {
 }
 
 
-
+/* main section styles */
 .main {
     display: flex;
     justify-content: center;
@@ -89,7 +90,6 @@ a {
     width: 100%;
     font-size: .5em;
     margin-top: 5vh;
-
 }
 
 
@@ -99,6 +99,8 @@ a {
     margin-top: 10%;
 }
 
+
+/* project header styles */
 .project-header {
     position: relative;
     display: flex;
@@ -110,7 +112,7 @@ a {
 
 .left-banner-line {
     position: relative;
-    height: 30vh;
+    height: 15vh;
     width: 25vw;
 }
 
@@ -122,7 +124,7 @@ a {
     left: 0;
     width: 10px;
     height: 2%;
-    animation: grow3 1s 4s 1 normal;
+    animation: grow3 1s 1s 1 normal;
     animation-fill-mode: both;
 }
 
@@ -134,8 +136,7 @@ a {
     right: 0;
     width: 10px;
     height: 2%;
-    background: blue;
-    animation: grow3 1s 4s 1 normal;
+    animation: grow3 1s 1s 1 normal;
     animation-fill-mode: both;
 }
 
@@ -146,7 +147,6 @@ a {
     align-items: center;
     width: 40vw;
     height: 20vh;
-    /* border: 10px solid blue; */
     margin: 0;
 
 }
@@ -165,44 +165,11 @@ a {
 
 .right-banner-line {
     position: relative;
-    height: 30vh;
+    height: 15vh;
     width: 25vw;
 
 }
 
-.project-head {
-    position: relative;
-    height: 10vh;
-    margin: 0;
-}
-
-
-.right-line {
-    height: 10vh;
-}
-
-.left-line {
-    height: 10vh;
-}
-
-.project-title {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5em;
-    height: 10vh;
-    width: 100vw;
-
-
-}
-
-
-
-.banner {
-    margin: 0;
-    font-size: 5vw;
-}
 
 .inside1 {
     position: absolute;
@@ -230,12 +197,12 @@ a {
     content: "";
     background: transparent;
     display: block;
-    width: 2px;
+    width: .5%;
     height: 2%;
     position: absolute;
     bottom: 50%;
     left: 0;
-    animation: grow 1s 3s 1 normal;
+    animation: grow 1s 2s 1 normal;
     animation-fill-mode: both;
 }
 
@@ -243,13 +210,13 @@ a {
     content: "";
     background: transparent;
     display: block;
-    width: 2px;
+    width: .5%;
     height: 2%;
     position: absolute;
     top: 50%;
     right: 0;
-    animation: grow2 1s 3s 1 normal;
-    animation-fill-mode: forwards;
+    animation: grow2 1s 2s 1 normal;
+    animation-fill-mode: both;
 
 }
 
@@ -257,13 +224,11 @@ a {
     from {
         background: black;
         height: 0%;
-
     }
 
     to {
         background: black;
         height: 50%;
-
     }
 }
 
@@ -288,12 +253,12 @@ a {
     content: "";
     background: transparent;
     display: block;
-    width: 2px;
-    height: .4vw;
+    width: .5%;
+    height: 2%;
     position: absolute;
     top: 0%;
     left: 0;
-    animation: grow3 1s 4s 1 normal;
+    animation: grow3 1s 3s 1 normal;
     animation-fill-mode: both;
 }
 
@@ -315,12 +280,12 @@ a {
     content: "";
     background: black;
     display: block;
-    width: 2px;
-    height: .4vw;
+    width: .5%;
+    height: 2%;
     position: absolute;
     bottom: 0%;
     right: 0;
-    animation: grow3 1s 4s 1 normal;
+    animation: grow3 1s 3s 1 normal;
     animation-fill-mode: both;
 }
 
@@ -332,12 +297,12 @@ a {
     content: "";
     background: transparent;
     display: block;
-    width: 2px;
-    height: .4vw;
+    width: .5%;
+    height: 2%;
     position: absolute;
     top: 0%;
     right: 0;
-    animation: grow2 1s 5s 1 normal;
+    animation: grow2 1s 4s 1 normal;
     animation-fill-mode: forwards;
 
 }
@@ -349,12 +314,12 @@ a {
     content: "";
     background: transparent;
     display: block;
-    width: 2px;
+    width: .5%;
     height: 2%;
     position: absolute;
     bottom: 0%;
     left: 0;
-    animation: grow 1s 5s 1 normal;
+    animation: grow 1s 4s 1 normal;
     animation-fill-mode: forwards;
 
 }
@@ -372,50 +337,8 @@ h3 {
 
 }
 
-.project-head {
-    animation: line-fade-top 5s 0s infinite normal;
-}
-
-
-
-@keyframes line-fade-right {
-    from {
-
-        width: 0%;
-        margin-right: 100%;
-        background: black;
-    }
-
-    to {
-
-        width: 100%;
-        margin-right: 0%;
-        background: black;
-    }
-}
-
-@keyframes line-fade-left {
-    from {
-
-        width: 0%;
-        margin-left: 100%;
-    }
-
-    to {
-
-        width: 100%;
-        margin-left: 0;
-    }
-}
-
-.hr-bottom {
-    width: 50%;
-    margin-top: 5%;
-
-}
-
+/* project showcase styles  */
 .grid {
-
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr 1fr;
@@ -481,6 +404,9 @@ h3 {
     }
 }
 
+
+
+/* bottom line for project area  */
 .bottom-project-area {
     position: relative;
     margin-top: 5vh;
@@ -509,7 +435,7 @@ h3 {
     left: 0%;
     margin-right: 10%;
     margin-left: auto;
-    animation: bottom_grow 5s 1s 1 normal;
+    animation: bottom_grow 11s 1s 1 normal;
     animation-fill-mode: forwards;
 }
 
@@ -518,30 +444,32 @@ h3 {
     background: transparent;
     display: block;
     width: 100%;
-    height: 6%;
+    height: 5%;
     position: absolute;
     bottom: 50%;
     right: 0%;
     margin-left: 10%;
     margin-right: auto;
-    animation: bottom_grow 5s 1s 1 normal;
+    animation: bottom_grow 11s 1s 1 normal;
     animation-fill-mode: forwards;
 }
 
 @keyframes bottom_grow {
     from {
         background: black;
-        height: 0px;
+        height: 5%;
         width: 0px;
     }
 
     to {
         background: black;
-        height: 6%;
+        height: 5%;
         width: 100%
     }
 }
 
+
+/* footer styles */
 .footer {
     position: fixed;
     bottom: 0;
