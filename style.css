@@ -11,7 +11,7 @@ body {
 
     width: 100%;
     min-height: 100%;
-    background-color: #2777cc;
+    background-color: #141c38;
     animation: example 10s 3s infinite alternate;
     margin: 0;
     padding: 0;
@@ -32,7 +32,6 @@ body {
     top: 0;
     display: flex;
     justify-content: center;
-
     width: 100%;
     margin-top: 0;
 
@@ -40,9 +39,18 @@ body {
 }
 
 .ul-container {
+    position: relative;
     display: flex;
     justify-content: center;
     border-bottom: 3px solid #6b9ebf;
+}
+
+.blur {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(10px);
+
 }
 
 
@@ -66,6 +74,8 @@ a {
     text-shadow: 1px 1px 1px #919191,
         1px 2px 1px #919191,
         1px 3px 1px #919191;
+
+    backdrop-filter: blur(0px);
 
 }
 
@@ -94,7 +104,7 @@ a {
 
 
 .toledo {
-    width: 90%;
+    width: 70%;
     padding-bottom: 5vh;
     margin-top: 10%;
 }
@@ -471,14 +481,15 @@ h3 {
 
 /* footer styles */
 .footer {
-    position: fixed;
-    bottom: 0;
+    /* position: fixed;
+    bottom: 0; */
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: flex-end;
     width: 95%;
     margin-top: 10%;
+    margin-bottom: 3%;
 
 }
 
