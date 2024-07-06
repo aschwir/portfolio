@@ -61,19 +61,24 @@ nav a:hover span{
 
 
     
-.img_class{  
-  width: 30rem;
-  height: 30rem;
+.img_class{ 
+  /* position: absolute; */
+  /* top:20rem;
+  left:2rem;  */
+ width: auto;
+  height: 40rem;
   object-fit: contain;
-  margin-right: 55%;
   border-radius: 50%;
   overflow: hidden;
+  
+  margin-right: 55%;
+  
 }
 
 .img_class img{
     height: 110%;
     width: 110%;
-    margin-top: 8%;
+    
 }
 
 
