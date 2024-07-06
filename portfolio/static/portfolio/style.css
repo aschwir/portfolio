@@ -33,6 +33,7 @@ nav{
     align-items: center;
     margin: auto;
     margin-top: 10px;
+    opacity: .7;
 }
 
 nav a {
@@ -74,4 +75,21 @@ nav a:nth-child(4):hover~span {
 nav a:nth-child(5):hover~span {
     left: 413px;
     width: 110px;
+}
+
+
+    
+.img_class{  
+  width: 30rem;
+  height: 30rem;
+  object-fit: contain;
+  margin-right: 55%;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.img_class img{
+    height: 110%;
+    width: 110%;
+    margin-top: 8%;
 }

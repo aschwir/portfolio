@@ -8,17 +8,20 @@
     <title>Portfolio</title>
   </head>
   <body>
-   <div class='nav-container'>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Project 1</a>
-      <a href="#">Project 2</a>
-      <a href="#">Project 3</a>
-      <span></span>
-    </nav>
+    <div class="nav-container">
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Project 1</a>
+        <a href="#">Project 2</a>
+        <a href="#">Project 3</a>
+        <span></span>
+      </nav>
     </div>
-    
-    {% block content %} {% endblock %}
+    <div class="img_class">
+       <img src={% static "portfolio/me.png" %} alt="me.png"> 
+    </div>
+
+    {% block content %} {%endblock %}
   </body>
 </html>
